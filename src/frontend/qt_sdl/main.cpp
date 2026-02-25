@@ -42,9 +42,12 @@
 #include <unistd.h>
 #include <sys/socket.h>
 #include <signal.h>
+//Removed for compatibility reasons
+/*
 #ifndef APPLE
 #include <qpa/qplatformnativeinterface.h>
 #endif
+*/
 #endif
 
 #include <SDL2/SDL.h>
