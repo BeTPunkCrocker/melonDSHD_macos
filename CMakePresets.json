@@ -46,6 +46,14 @@
       "displayName": "macOS release (arm64)",
       "binaryDir": "${sourceDir}/build/release-mac-arm64",
       "cacheVariables": { "CMAKE_OSX_ARCHITECTURES": "arm64" }
+    },
+    {
+      "name": "debug-mac-arm64",
+      "inherits": "release-mac-arm64",
+      "displayName": "macOS debug (arm64)",
+      "cacheVariables": {
+        "CMAKE_BUILD_TYPE": "DEBUG"
+      }
     }
   ],
   "buildPresets": [
@@ -68,7 +76,12 @@
     {
       "name": "release-mac-arm64",
       "configurePreset": "release-mac-arm64"
+    },
+    {
+      "name": "debug-mac-arm64",
+      "configurePreset": "debug-mac-arm64"
     }
+    
   ],
   "workflowPresets": [
     {
@@ -100,6 +113,14 @@
         { "type": "configure", "name": "release-mac-arm64" },
         { "type": "build", "name": "release-mac-arm64" }
       ]
+    },
+    {
+      "name": "debug-mac-arm64",
+      "steps": [
+        { "type": "configure", "name": "debug-mac-arm64" },
+        { "type": "build", "name": "debug-mac-arm64" }
+      ]
     }
+
   ]
 }
