@@ -43,7 +43,8 @@ As for the rest, the interface should be pretty straightforward. If you have a q
 ## How to build
 See [BUILD.md](./BUILD.md) for build instructions. Standard dependencies apply; binary name is `melonDSHD`.
 
-## What is the 
+## Why did BettyPunkCrocker fork this?
+I couldn't get it to compile or debug on Mac as-is. I cannibalized some code from the original MelonDS github project to get it to compile. To get it to run in debug mode, I edited launch.json and tasks.json.
 
 ## TODO LIST
 * Sprite Texture Dumping
