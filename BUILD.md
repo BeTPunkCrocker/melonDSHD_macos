@@ -69,6 +69,23 @@ If everything went well, melonDSHD should now be in the `build` folder. For dyna
    ```
 If everything went well, melonDSHD.app should now be in the `build` directory.
 
+5. (Optional) Debug:
+   ```zsh
+   cd build/debug
+   ```
+   To prevent an error about "libarchive" not being installed, type:
+   ```zsh
+  export PKG_CONFIG_PATH="/opt/homebrew/opt/libarchive/lib/pkgconfig"
+  ```
+   Finally, build the project:
+  ```zsh
+  cmake -DCMAKE_BUILD_TYPE=Debug ../..
+  cmake --build . -- -j8 
+   ```
+
+
+
+
 ### Self-contained app bundle
 If you want an app bundle that can be distributed to other computers without needing to install dependencies through Homebrew, you can additionally run `
 ../tools/mac-libs.rb .` after the build is completed, or add `-DMACOS_BUNDLE_LIBS=ON` to the first CMake command.

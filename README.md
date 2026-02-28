@@ -1,7 +1,7 @@
 <p align="center"><img src="res/icon/melon_128x128.png"></p>
 <h2 align="center"><b>melonDS HD -AN UNOFFICIAL FORK of MELONDS</b></h2>
 
-> IMPORTANT: Unofficial, experimental fork
+> IMPORTANT: Unofficial, experimental fork (of an unofficial experimental fork)
 >
 > - Please do not contact the original melonDS team about issues with this fork. Use this repository’s issue tracker instead.
 > - This is a very rough, experimental side project focused on HD features. Expect breakage and rapid changes; it may stall at any time. No promises of future development or features.
@@ -42,6 +42,8 @@ As for the rest, the interface should be pretty straightforward. If you have a q
 
 ## How to build
 See [BUILD.md](./BUILD.md) for build instructions. Standard dependencies apply; binary name is `melonDSHD`.
+
+## What is the 
 
 ## TODO LIST
 * Sprite Texture Dumping
